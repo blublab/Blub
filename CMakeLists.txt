@@ -11,7 +11,7 @@ set(NETALYZER_VERSION
 find_library(ZMQ libzmq.a ${PROJECT_SOURCE_DIR}/lib)
 
 
-add_executable(Master master.cpp)
+add_executable(Master master.cpp include/zmq.h include/zmq.hpp include/zmq_utils.h)
 
 
 
